@@ -35,7 +35,7 @@
     <li class="list-group-item" >Pour refaire une nouvelle partie, cliquez sur "Rejouer" au-dessus 3 des images</li>
   </ol>
   <div class="container text-center mb-3 ">
-    <button type="button" class="bandeau p-2 mt-2 mb-2  rounded" id="acherLesRegles" >Cacher les règles du jeu</button>
+    <button type="button" class="bandeau p-2 mt-4 mb-2  rounded" id="acherLesRegles" >Cacher les règles du jeu</button>
   </div>
 </div>
 

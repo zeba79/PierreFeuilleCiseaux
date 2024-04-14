@@ -6,6 +6,14 @@ const message =document.getElementById("message");
 const rejouer = document.getElementById("rejouer");
 const regles = document.getElementById("regles");
 const reglesDuJeu = document.getElementById("reglesDuJeu");
+const cacherLesRegles = document.getElementById("acherLesRegles");
+
+cacherLesRegles.addEventListener("click", cacherLesReglesDuJeu);
+
+function cacherLesReglesDuJeu(){
+    regles.setAttribute("style","visibility:hidden;  height:1px;");
+
+}
 
 reglesDuJeu.addEventListener("click", afficherRegles);
 
