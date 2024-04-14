@@ -62,9 +62,9 @@ function verification(choixJoueur){
     // Suppression des évènements
         
 
-    imageFeuille.removeEventListener("click", clickPierre);
+    imagePierre.removeEventListener("click", clickPierre);
     imageFeuille.removeEventListener("click", clickFeuille);
-    imageFeuille.removeEventListener("click", clickCiseaux);
+    imageCiseaux.removeEventListener("click", clickCiseaux);
 }
 
 init();
