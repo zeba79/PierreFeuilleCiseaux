@@ -10,9 +10,11 @@
   </head>
   <body>
     <div class="container">
-
         <h1 class="bandeau shadow-lg p-3 mt-2 mb-5 bg-body-tertiary rounded text-center">
             Bonjour et bienvenue sur notre jeu culte ! </h1>
+    </div>
+    <div class="container text-center mb-5 ">
+        <button type="button" class="btn btn-primary">Rejouer</button>
     </div>
     <div class="container text-center ">
         <img src="/assets/img/Pierre.png " class=" text-center border border-primary rounded" alt="Pierre" id="pierre" >
