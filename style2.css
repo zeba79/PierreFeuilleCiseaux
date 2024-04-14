@@ -1,0 +1,15 @@
+.bandeau{
+    background: linear-gradient(90deg, #000824 , #a0acbe);
+    color: #FFFF;
+}
+
+
+.green{
+    border: 1px solid yellowgreen;
+    border-radius: 5%;
+}
+
+.red{
+    border: 2px solid red;
+    border-radius: 5%;
+}
