@@ -8,3 +8,9 @@
     border: 1px solid yellowgreen;
     border-radius: 5%;
 }
+
+
+#regles{
+    visibility: hidden;
+    height: 1px;
+}
