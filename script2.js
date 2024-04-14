@@ -25,6 +25,7 @@ message.innerHTML = "Le choix de l'ordinateur est fait, à vous de jouer...";
 // Création des fonctions
 function clickPierre(){
     imagePierre.style.border = "thick solid #0000FF";
+
     verification(0);
 }
 function clickFeuille(){
@@ -47,8 +48,16 @@ function verification(choixJoueur){
     }
     message.innerHTML = "Le choix de l'ordinateur est : " + choixPoissible[choixOrdinateur] + "<br>" + "Votre choix est " + choixJoueur + "<br>" + gagnant;
 
+
+    verification(1);
 }
-
-
+function clickFeuille(){
+    imageFeuille.style.border = "thick solid #0000FF";
+    verification(2);
+}
+function clickCiseaux(){
+    imageCiseaux.style.border = "thick solid #0000FF";
+    verification(3);
+}
 
 
