@@ -9,19 +9,29 @@ const message =document.getElementById("message");
 
 const rejouer = document.getElementById("rejouer");
 
-// Ajout d'évènement à chaque image
-imagePierre.addEventListener("click", clickPierre);
-imageFeuille.addEventListener("click", clickFeuille);
-imageCiseaux.addEventListener("click", clickCiseaux );
+
+rejouer.addEventListener("click", function(){init();})
+
 
 // Définition du choix de l'ordi et les choix possibles
 let choixOrdinateur;
 const choixPoissible = ["PIERRE", "FEUILLE", "CISEAUX"];
 
+function init(){
+    
+    // Ajout d'évènement à chaque image
+    imagePierre.addEventListener("click", clickPierre);
+    imageFeuille.addEventListener("click", clickFeuille);
+    imageCiseaux.addEventListener("click", clickCiseaux );
 
-choixOrdinateur = (Math.random()*2).toFixed(0); // toFixed(0)= arrondir les valeurs à 0
-message.innerHTML = "Le choix de l'ordinateur est fait, à vous de jouer...";
-
+    imagePierre.style.border = "1px solid red";
+    imageFeuille.style.border = "1px solid red";
+    imageCiseaux.style.border = "1px solid red";
+    
+    choixOrdinateur = (Math.random()*2).toFixed(0); // toFixed(0)= arrondir les valeurs à 0
+    message.innerHTML = "Le choix de l'ordinateur est fait, à vous de jouer...";
+    
+}
 // Création des fonctions
 function clickPierre(){
     imagePierre.style.border = "thick solid #0000FF";
@@ -48,16 +58,6 @@ function verification(choixJoueur){
     }
     message.innerHTML = "Le choix de l'ordinateur est : " + choixPoissible[choixOrdinateur] + "<br>" + "Votre choix est " + choixJoueur + "<br>" + gagnant;
 
-
-    verification(1);
-}
-function clickFeuille(){
-    imageFeuille.style.border = "thick solid #0000FF";
-    verification(2);
-}
-function clickCiseaux(){
-    imageCiseaux.style.border = "thick solid #0000FF";
-    verification(3);
 }
 
-
+init();
