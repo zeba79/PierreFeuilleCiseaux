@@ -15,9 +15,13 @@
             Bonjour et bienvenue sur notre jeu culte ! </h1>
     </div>
     <div class="container text-center ">
-        <img src="/assets/img/Pierre.png " class=" text-center border border-primary rounded" alt="Pierre">
-        <img src="/assets/img/Feuille.png " class=" border border-primary rounded " alt="Feuille">
-        <img src="/assets/img/Ciseaux.png " class=" border border-primary rounded " alt="Ciseaux">
+        <img src="/assets/img/Pierre.png " class=" text-center border border-primary rounded" alt="Pierre" id="pierre" >
+        <img src="/assets/img/Feuille.png " class=" border border-primary rounded " alt="Feuille" id="feuille" >
+        <img src="/assets/img/Ciseaux.png " class=" border border-primary rounded " alt="Ciseaux" id="ciseaux" >
+    </div>
+
+    <div class="container text-center mt-5 bandeau" id="message">
+        Messages
     </div>
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
