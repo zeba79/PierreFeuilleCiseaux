@@ -10,11 +10,11 @@
   </head>
   <body>
     <div class="container">
-        <h1 class="bandeau shadow-lg p-3 mt-2 mb-5 bg-body-tertiary rounded text-center">
+        <h1 class="bandeau shadow-lg p-3 mt-2 mb-5 rounded text-center">
             Bonjour et bienvenue sur notre jeu culte ! </h1>
     </div>
     <div class="container text-center mb-5 ">
-        <button type="button" class="btn btn-primary">Rejouer</button>
+        <button type="button" class="bandeau p-2 mt-2 mb-2  rounded text-center" id="rejouer" >Rejouer</button>
     </div>
     <div class="container text-center ">
         <img src="/assets/img/Pierre.png " class=" text-center border border-primary rounded" alt="Pierre" id="pierre" >
@@ -29,5 +29,6 @@
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
 </script>
+<script src="/script.js"></script>
   </body>
 </html>
